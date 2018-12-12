@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">LoginGmail</string>
+
+    <string name="name_prompt">TGD: Trần Đình Nhân</string>
+
+    <string-array name="name_arrays">
+        <item>Ly Ca Tiếu đẹp trai</item>
+        <item>Tâm Pưởm</item>
+        <item>Pulto đầu heo</item>
+    </string-array>
+</resources>

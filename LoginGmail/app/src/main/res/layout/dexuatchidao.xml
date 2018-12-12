@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="607dp"
+        android:layout_height="?attr/actionBarSize"
+        android:textColor="#fff"
+        android:background="#145fff"
+        android:drawableLeft="@drawable/icon_back"
+        android:text="Đề xuất chỉ đạo"
+        android:paddingLeft="10dp"
+        android:textStyle="bold"
+        android:gravity="center_vertical"
+        android:drawablePadding="20dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:gravity="center"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/icon_eye"
+            android:text="Xem file công văn"
+            android:drawableRight="@drawable/icon_drop"
+            android:drawablePadding="10dp"
+            android:textColor="#000"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#e8e8e8" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nội dung đề xuất chỉ đạo"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:paddingLeft="10dp"
+        android:paddingTop="15dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:text="Chuyển CNTT chủ trì thực hiện công việc theo nội dung công văn"
+        android:textColor="#000"
+        android:background="@drawable/bg_content"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="13dp"
+        android:layout_marginTop="10dp" />
+
+    <LinearLayout android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="10dp" >
+        <!-- Phòng ban-->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="95dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="94dp"
+                android:layout_height="wrap_content"
+                android:text="Phòng ban"
+                android:textStyle="bold"
+                android:textColor="#000" />
+            <TextView
+                android:layout_width="94dp"
+                android:layout_height="wrap_content"
+                android:paddingTop="15dp"
+                android:text="1. Anh Nhân"
+                android:textColor="#000"/>
+            <TextView
+                android:layout_width="94dp"
+                android:layout_height="wrap_content"
+                android:text="2. Ly Tiếu Ca"
+                android:textColor="#000"
+                android:paddingTop="14dp" />
+            <TextView
+                android:layout_width="94dp"
+                android:layout_height="wrap_content"
+                android:text="3. Tâm Pưởm"
+                android:textColor="#000"
+                android:paddingTop="14dp" />
+            <TextView
+                android:layout_width="94dp"
+                android:layout_height="wrap_content"
+                android:text="4. Pluto đầu bò"
+                android:textColor="#000"
+                android:paddingTop="13dp" />
+            <TextView
+                android:layout_width="94dp"
+                android:layout_height="wrap_content"
+                android:text="5. Tâm đầu bò"
+                android:textColor="#000"
+                android:paddingTop="15dp" />
+            <TextView
+                android:layout_width="94dp"
+                android:layout_height="wrap_content"
+                android:text="6. My đẹp trai"
+                android:textColor="#000"
+                android:paddingTop="13dp" />
+            <TextView
+                android:layout_width="94dp"
+                android:layout_height="wrap_content"
+                android:text="7. Yasuo"
+                android:textColor="#000"
+                android:paddingTop="13dp" />
+        </LinearLayout>
+
+        <!-- Chủ trì-->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content">
+            <TextView
+            android:layout_width="79dp"
+            android:layout_height="wrap_content"
+            android:text="Chủ trì"
+            android:textStyle="bold"
+            android:textColor="#000" />
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="8dp"
+                android:orientation="vertical">
+                <RadioButton android:id="@+id/radio1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onRadioButtonClicked"
+                    android:checked="true" />
+                <RadioButton android:id="@+id/radio2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onRadioButtonClicked" />
+                <RadioButton android:id="@+id/radio3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onRadioButtonClicked" />
+                <RadioButton android:id="@+id/radio4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onRadioButtonClicked" />
+                <RadioButton android:id="@+id/radio5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onRadioButtonClicked" />
+                <RadioButton android:id="@+id/radio6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onRadioButtonClicked" />
+                <RadioButton android:id="@+id/radio7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onRadioButtonClicked" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <!-- Phối hợp-->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content">
+            <CheckBox
+                android:id="@+id/phoihop"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:text="Phối hợp"
+                android:textStyle="bold"
+                android:layout_marginTop="-7dp"
+                android:textColor="#000" />
+            <CheckBox
+                android:id="@+id/checkboxphoihop1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true" />
+            <CheckBox
+                android:id="@+id/checkboxphoihop2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true" />
+            <CheckBox
+                android:id="@+id/checkboxphoihop3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true" />
+            <CheckBox
+                android:id="@+id/checkboxphoihop4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true" />
+            <CheckBox
+                android:id="@+id/checkboxphoihop5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true" />
+            <CheckBox
+                android:id="@+id/checkboxphoihop6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true" />
+            <CheckBox
+                android:id="@+id/checkboxphoihop7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true" />
+        </LinearLayout>
+
+        <!-- Xem ĐB-->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content">
+            <CheckBox
+                android:id="@+id/xemdb"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:text="Xem ĐB"
+                android:textStyle="bold"
+                android:layout_marginTop="-7dp"
+                android:textColor="#000" />
+            <CheckBox
+                android:id="@+id/checkboxxemdb1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true" />
+            <CheckBox
+                android:id="@+id/checkboxxemdb2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true" />
+            <CheckBox
+                android:id="@+id/checkboxxemdb3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true" />
+            <CheckBox
+                android:id="@+id/checkboxxemdb4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true" />
+            <CheckBox
+                android:id="@+id/checkboxxemdb5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true" />
+            <CheckBox
+                android:id="@+id/checkboxxemdb6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true" />
+            <CheckBox
+                android:id="@+id/checkboxxemdb7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

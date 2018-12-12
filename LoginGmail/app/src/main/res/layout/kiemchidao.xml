@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="607dp"
+        android:layout_height="?attr/actionBarSize"
+        android:textColor="#fff"
+        android:background="#145fff"
+        android:drawableLeft="@drawable/icon_back"
+        android:text="Chuyển chỉ đạo"
+        android:paddingLeft="10dp"
+        android:textStyle="bold"
+        android:gravity="center_vertical"
+        android:drawablePadding="20dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:gravity="center"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/icon_eye"
+            android:text="Xem file công văn"
+            android:drawableRight="@drawable/icon_drop"
+            android:drawablePadding="10dp"
+            android:textColor="#000"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#e8e8e8" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Chuyển đến"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:paddingLeft="10dp"
+        android:paddingTop="15dp" />
+    <Spinner
+        android:id="@+id/spinner1"
+        android:entries="@array/name_arrays"
+        android:prompt="@string/name_prompt"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textColor="#000"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nội dung"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:paddingLeft="10dp"
+        android:paddingTop="15dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="Kính chuyển Anh Nhân chỉ đạo"
+        android:textColor="#000"
+        android:background="@drawable/bg_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"></View>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#e8e8e8" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="bottom|center">
+        <Button
+            android:layout_width="170dp"
+            android:layout_height="40dp"
+            android:text="Hủy"
+            android:textColor="#8c93a4"
+            android:background="@drawable/bg_cancel"
+            android:textSize="11dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginRight="3dp"
+            android:drawableRight="@drawable/icon_delete" />
+        <Button
+            android:layout_width="170dp"
+            android:layout_height="40dp"
+            android:text="Chuyến chỉ đạo"
+            android:textColor="#fff"
+            android:background="@drawable/bg_round"
+            android:textSize="11dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="3dp"
+            android:drawableRight="@drawable/icon_confirm" />
+    </LinearLayout>
+</LinearLayout>
